@@ -1,0 +1,20 @@
+{{! views/recipeList.hbs }}
+{{!< layout }} <div class="recipes-list">
+    <h2>Available Recipes</h2>
+    <div class="row">
+        {{#each recipes}}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{{this.image}}" class="card-img-top" alt="{{this.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="/recipes/{{this._id}}" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <p>No recipes available.</p>
+        {{/each}}
+    </div>
+    </div>

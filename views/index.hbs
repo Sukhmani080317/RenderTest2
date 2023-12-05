@@ -1,0 +1,47 @@
+{{! index.hbs }}
+{{!< layout }} <div class="jumbotron jumbotron-fluid bg-light text-center">
+    <div class="container">
+        <h1 class="display-4">Welcome to the Recipe Sharing Platform</h1>
+        <p class="lead">Discover new recipes, share your culinary creations, and connect with fellow food enthusiasts.
+        </p>
+        <a href="/register" class="btn btn-primary btn-lg">Join Now</a>
+        <a href="/login" class="btn btn-secondary btn-lg">Login</a>
+    </div>
+    </div>
+
+    <div class="container">
+        <section class="featured-recipes">
+            <h2 class="text-center mb-4">Featured Recipes</h2>
+            <div class="card-deck">
+                <!-- Dynamic recipe cards will be inserted here -->
+            </div>
+        </section>
+
+        <section class="how-it-works py-5">
+            <h2 class="text-center mb-4">How It Works</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="icon-custom fa fa-search fa-3x mb-3"></i>
+                    <h3>Explore</h3>
+                    <p>Search through a vast collection of recipes from all over the world.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="icon-custom fa fa-users fa-3x mb-3"></i>
+                    <h3>Share</h3>
+                    <p>Post your recipes and share them with the community. Get feedback and improve.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="icon-custom fa fa-heart fa-3x mb-3"></i>
+                    <h3>Connect</h3>
+                    <p>Follow your favorite chefs and stay up-to-date with their latest culinary adventures.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials py-5 bg-light">
+            <h2 class="text-center mb-4">What Our Users Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Testimonials will be inserted here -->
+            </div>
+        </section>
+    </div>

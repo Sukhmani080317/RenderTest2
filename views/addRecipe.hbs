@@ -1,0 +1,30 @@
+{{! recipeSubmission.hbs }}
+{{!< layout }} <h2 class="text-center my-4">Submit Your Recipe</h2>
+
+    <form action="/recipes/addRecipe" method="POST" class="mb-4">
+        <div class="form-group">
+            <label for="title">Recipe Title</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="ingredients">Ingredients</label>
+            <textarea class="form-control" id="ingredients" name="ingredients" rows="4"
+                placeholder="List ingredients with quantities" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="instructions">Instructions</label>
+            <textarea class="form-control" id="instructions" name="instructions" rows="5"
+                placeholder="Step-by-step cooking instructions" required></textarea>
+        </div>
+
+        <!-- Optionally, you can add fields for images, cooking time, etc. -->
+
+        <button type="submit" class="btn btn-primary">Submit Recipe</button>
+    </form>
